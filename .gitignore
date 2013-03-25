@@ -1,3 +1,5 @@
 /composer.lock
 /.project
 /vendor/
+
+/composer.phar
