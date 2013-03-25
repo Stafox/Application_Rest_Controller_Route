@@ -16,7 +16,7 @@ class Application_Rest_Controller_RouteTest extends PHPUnit_Framework_TestCase
         $this->_dispatcher = $this->_front->getDispatcher();
 
         
-        $this->_front->getRouter()->addRoute('users-messages', new Application_Rest_Controller_Route($this->_front, 'users/:user_id/messages', ['controller' => 'users-messages']));
+        $this->_front->getRouter()->addRoute('users-messages', new Application_Rest_Controller_Route($this->_front, 'users/:user_id/messages', array('controller' => 'users-messages')));
         
     }
     
