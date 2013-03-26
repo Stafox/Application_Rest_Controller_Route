@@ -49,6 +49,12 @@ class Application_Rest_Controller_Route extends Zend_Controller_Router_Route
             $path   = $request->getPathInfo();
             $params = $request->getParams();
 
+            $path   = trim($path, self::URI_DELIMITER);
+            
+            if ($path != '') {
+                $path = explode(self::URI_DELIMITER, $path);
+            }
+            
             //Store path count for method mapping
             $pathElementCount = count($path);
             
@@ -79,7 +85,13 @@ class Application_Rest_Controller_Route extends Zend_Controller_Router_Route
                 }
 
             } else {
-                $return[$this->_actionKey] = 'index';
+                // if the last argument in the path is a numeric value, consider this request a GET of an item
+                $lastParam = array_pop($path);
+                if (is_numeric($lastParam)) {
+                    $return[$this->_actionKey] = 'get';
+                } else {
+                    $return[$this->_actionKey] = 'index';
+                }
             }
             
         } 
