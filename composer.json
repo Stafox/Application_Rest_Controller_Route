@@ -1,33 +1,41 @@
 {
-    "name": "aporat/application_rest_controller_route",
-    "description": "RESTful Zend_Controller_Router_Route with custom defined routes",
-    "keywords": ["zend", "zf1", "restful", "rest", "zend_controller"],
-    "type": "library",
-    "homepage" : "https://github.com/aporat/Application_Rest_Controller_Route",
-    "authors": [
-        {
-            "name": "Adar Porat",
-            "email": "adar.porat@gmail.com",
-            "homepage": "http://github.com/aporat"
-        }
-    ],
-	"support": {
-		"email": "adar.porat@gmail.com",
-		"issues": "https://github.com/aporat/Application_Rest_Controller_Route"
+	"name" : "aporat/application_rest_controller_route",
+	"description" : "RESTful Zend_Controller_Router_Route with custom defined routes",
+	"type" : "library",
+	"authors" : [{
+			"name" : "Adar Porat",
+			"email" : "adar.porat@gmail.com",
+			"homepage" : "http://github.com/aporat"
+		}
+	],
+	"keywords" : [
+		"zend",
+		"zf1",
+		"restful",
+		"rest",
+		"zend_controller"
+	],
+	"homepage" : "https://github.com/aporat/Application_Rest_Controller_Route",
+	"license" : [
+		"Apache-2.0"
+	],
+	"require" : {
+		"bombayworks/zendframework1" : "v1.12.1",
+		"php" : ">=5.3"
 	},
-    "require": {
-        "php": ">=5.3",
-        "bombayworks/zendframework1": "v1.12.1"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+	"require-dev" : {
+		"phpunit/phpunit" : "3.7.*"
 	},
-	"autoload": {
-        "psr-0": {
-            "Application_Rest_Controller": "library/Application/Rest/Controller"
-        }
-    },
-    "include-path": [
-        "library/"
-    ]
+	"autoload" : {
+		"psr-0" : {
+			"Application_Rest_Controller" : "library/Application/Rest/Controller"
+		}
+	},
+	"support" : {
+		"email" : "adar.porat@gmail.com",
+		"issues" : "https://github.com/aporat/Application_Rest_Controller_Route"
+	},
+	"include-path" : [
+		"library/"
+	]
 }
