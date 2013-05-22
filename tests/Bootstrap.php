@@ -10,7 +10,7 @@ $tests = "$root/tests";
 $path = array($library, $tests, get_include_path());
 set_include_path(implode(PATH_SEPARATOR, $path));
 
-require_once '../vendor/autoload.php';
+require_once $root . '/vendor/autoload.php';
 require_once 'Application/Rest/Controller/Route.php';
 
 unset($root, $library, $tests, $path);
