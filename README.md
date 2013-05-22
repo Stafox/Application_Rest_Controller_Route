@@ -1,5 +1,6 @@
-Application_Rest_Controller_Route  [![Build Status](https://secure.travis-ci.org/aporat/Application_Rest_Controller_Route.png)](http://travis-ci.org/aporat/Application_Rest_Controller_Route)
+Application_Rest_Controller_Route
 ============================
+[![Build Status](https://secure.travis-ci.org/aporat/Application_Rest_Controller_Route.png)](http://travis-ci.org/aporat/Application_Rest_Controller_Route) [![Coverage Status](https://coveralls.io/repos/aporat/Application_Rest_Controller_Route/badge.png)](https://coveralls.io/r/aporat/Application_Rest_Controller_Route)
 
 
 ## Requirements ##
