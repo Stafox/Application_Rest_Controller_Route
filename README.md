@@ -35,10 +35,10 @@ If you're not familiar with Composer, please see <http://getcomposer.org/>.
 
 4. Register namespace `Application` in Bootstrap.
 
-        ```php
+```php
         $loader = Zend_Loader_Autoloader::getInstance();
         $loader->registerNamespace('Application');
-        ```
+```
 
 ## Quick Example ##
 
